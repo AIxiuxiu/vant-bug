@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="no-referrer" />
+  <title>
+    <%= title %>
+  </title>
+  <style>
+    #app {
+      height: 100%;
+    }
+
+    .roadshow-home {
+      position: absolute;
+      z-index: 10000;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      user-select: none;
+      color: #736477;
+      background-color: snow;
+    }
+
+    .roadshow-home .loading {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .roadshow-home .square {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20px;
+      width: 20px;
+    }
+
+    .roadshow-home .square::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 15%;
+      border: 3px solid #8c858f;
+    }
+
+    .roadshow-home .loading.animate .square::before {
+      animation: square-to-dot-animation 1.2s linear;
+    }
+
+    .roadshow-home .loading.animate .square:nth-child(1)::before {
+      animation-delay: calc(100ms * 1);
+    }
+
+    .roadshow-home .loading.animate .square:nth-child(2)::before {
+      animation-delay: calc(100ms * 2);
+    }
+
+    .roadshow-home .loading.animate .square:nth-child(3)::before {
+      animation-delay: calc(100ms * 3);
+    }
+
+    .roadshow-home .loading.animate .square:nth-child(4)::before {
+      animation-delay: calc(100ms * 4);
+    }
+
+    @keyframes square-to-dot-animation {
+
+      15%,
+      55% {
+        border-radius: 100%;
+        width: 0;
+        height: 0;
+        margin: 5px;
+        border-width: 5px;
+      }
+
+      70% {
+        border-radius: 15%;
+        width: 10px;
+        height: 10px;
+        margin: initial;
+        border-width: 3px;
+      }
+    }
+
+    .roadshow-home .text {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="roadshow-home">
+      <div class="loading">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="text">
+        <%= title %>载入中…
+      </div>
+    </div>
+  </div>
+  <script>
+    const Loading = document.querySelector('.loading')
+    Loading.classList.add('animate')
+    Loading.addEventListener('animationend', function () {
+      setTimeout(function () {
+        Loading.classList.remove('animate')
+      }, 600)
+      setTimeout(function () {
+        Loading.classList.add('animate')
+      }, 1000)
+    })
+  </script>
+  <script type="module" src="/src/main.ts"></script>
+
+  <% if (vconsole) { %>
+    <script src="https://unpkg.com/vconsole/dist/vconsole.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-vconsole-devtools@1.0.5/dist/vue_plugin.js"></script>
+    <script>
+      var vConsole = new window.VConsole();
+      const Devtools = window.vueVconsoleDevtools["default"];
+      Devtools.initPlugin(vConsole);
+    </script>
+    <% } %>
+</body>
+
+</html>

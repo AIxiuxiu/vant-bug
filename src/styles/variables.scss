@@ -1,0 +1,123 @@
+:root {
+  // 主色
+  --primary-color: #3d7eff;
+  --success-color: #4ce2a7;
+  --error-color: #e24c4c;
+  --warning-color: #f1a153;
+  --white-color: #fff;
+  --black-color: #000;
+  // 标题色
+  --text-color-primary: #2c2b30;
+  // 次要文字色
+  --text-color-regular: #5a626a;
+  // 副标题文字色
+  --text-color-secondary: #929196;
+  // 不可点击 文字颜色
+  --text-color-disabled: #eeeef5;
+  --text-color-placeholder: #c0c4cc;
+  // 边框颜色
+  --border-color-base: #e8ecf2;
+  --border-color-light: #e4e7ed;
+  --border-color-lighter: #ebeef5;
+  --border-color-extra-light: #f2f6fc;
+  // 背景色
+  --bg-color: #f0f3f9;
+  // 字体
+  --font-size-large: 18px;
+  --font-size-medium: 16px;
+  --font-size-base: 14px;
+  --font-size-small: 13px;
+  --font-size-extra-small: 12px;
+  // 表table
+  --table-header-color: #f6f7fa;
+  --box-shadow-base: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+// 主色
+$primary-color: var(--primary-color);
+$success-color: var(--success-color);
+$error-color: var(--error-color);
+$warning-color: var(--warning-color);
+$white-color: var(--white-color);
+$black-color: var(--black-color);
+
+// 渐变色
+$primary-gradient-color: linear-gradient(90deg, #9c99ff 0%, #6561f7 100%);
+$success-gradient-color: linear-gradient(270deg, #4ce2a7 0%, #b3f6dc 100%);
+$error-gradient-color: linear-gradient(270deg, #e24c4c 0%, #ffb2b2 100%);
+$warning-gradient-color: linear-gradient(270deg, #f1a153 0%, #ffdebe 100%);
+$dark-gradient-color: linear-gradient(270deg, #020a47 0%, #5a5498 100%);
+
+// 字体颜色
+// 标题色
+$text-color-primary: var(--text-color-primary);
+// 次要文字色
+$text-color-regular: var(--text-color-regular);
+// 副标题文字色
+$text-color-secondary: var(--text-color-secondary);
+// 不可点击 文字颜色
+$text-color-disabled: var(--text-color-disabled);
+// placeholder
+$text-color-placeholder: var(--text-color-placeholder);
+
+// 边框颜色border
+$border-color-base: var(--border-color-base);
+$border-color-light: var(--border-color-light);
+$border-color-lighter: var(--border-color-lighter);
+$border-color-extra-light: var(--border-color-extra-light);
+
+$border: 1px solid $border-color-base;
+
+$border-color-base: var(--border-color-base);
+$bg-color: var(--bg-color);
+// 字体大小
+$font-size-large: var(--font-size-large);
+$font-size-medium: var(--font-size-medium);
+$font-size-base: var(--font-size-base);
+$font-size-small: var(--font-size-small);
+$font-size-extra-small: var(--font-size-extra-small);
+
+// 常用颜色
+$blue-color: #545dff;
+$green-color: #4ce2a7;
+$red-color: #e24c4c;
+$orange-color: #f1a153;
+// 灰色
+$grey-color: #999;
+$grey-lighter-color: #fafafa;
+$grey-light-color: #e5e5e5;
+$grey-medium-color: #ccc;
+
+// 阴影 box-shadow
+// 常用阴影 base
+$box-shadow-base: var(--box-shadow-base);
+$box-shadow-light: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-lighter: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-dark: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+
+//页面背景色
+$bg-color: var(--bg-color);
+// 表头颜色
+$table-header-color: var(--table-header-color);
+
+/* =================================================================
+  页面布局相关
+  ================================================================= */
+
+// 布局的padding
+$content-padding: 26px;
+// 布局的 border-radius
+$content-border-radius: 16px;
+
+$top-height: 80px;
+$bottom-height: 40px;
+// sidebar 侧边栏
+$sidebar-width: 160px;
+$menu-bg: #fff;
+$menu-text: #9d9cbb;
+$menu-active-text: $primary-color;
+//顶部导航栏
+$top-menu-height: 44px;
+
+// 标题栏高度
+$titlebar-height: 32px;

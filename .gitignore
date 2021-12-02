@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+dist
+build
+*.local
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# 自动生成的声明
+**/components.d.ts

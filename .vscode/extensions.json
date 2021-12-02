@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "mikestead.dotenv",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "editorconfig.editorconfig",
+    "johnsoncodehk.volar",
+    "naumovs.color-highlight",
+    "hollowtree.vue-snippets",
+    "rain.vue-scss-variable-scan",
+    "eamodio.gitlens",
+    "ms-ceintl.vscode-language-pack-zh-hans",
+    "gencer.html-slim-scss-css-class-completion"
+  ]
+}

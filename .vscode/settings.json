@@ -1,0 +1,25 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 30000,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": [
+    "source.organizeImports", // 整理 import ，去掉没用的导包
+    "source.fixAll.eslint", // eslint -fix
+    "source.fixAll.stylelint", //stylelint -fix
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.linkedEditing": true,
+  },
+  "files.watcherExclude": {
+    "**/.git": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/temp/**": true,
+  },
+  "search.exclude": {
+    "**/dist": true,
+    "**/build": true,
+  },
+  "vue-scss-variable-scan.globalPath": "src/render/styles/variables.scss",
+}

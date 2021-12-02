@@ -1,0 +1,693 @@
+/* 文字样式 */
+.fontsize-12 {
+  font-size: 12px;
+}
+
+.fontsize-14 {
+  font-size: 14px;
+}
+
+.fontsize-16 {
+  font-size: 16px;
+}
+
+.fontsize-18 {
+  font-size: 18px;
+}
+
+.fontsize-20 {
+  font-size: 20px;
+}
+
+.fontsize-24 {
+  font-size: 24px;
+}
+
+.fontsize-28 {
+  font-size: 28px;
+}
+
+.fontsize-32 {
+  font-size: 32px;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lineheight-1 {
+  line-height: 1;
+}
+
+.lineheight-16 {
+  line-height: 16px;
+}
+
+.lineheight-18 {
+  line-height: 18px;
+}
+
+.lineheight-24 {
+  line-height: 24px;
+}
+
+.lineheight-28 {
+  line-height: 28px;
+}
+
+.lineheight-36 {
+  line-height: 36px;
+}
+
+.lineheight-normal {
+  line-height: 1.4;
+}
+
+.word-wrap {
+  word-wrap: break-word;
+}
+
+.user-select-none {
+  user-select: none;
+}
+
+/* 颜色相关 */
+.red {
+  color: $red-color;
+}
+
+.gray {
+  color: $grey-color;
+}
+
+.blue {
+  color: $blue-color;
+}
+
+.orange {
+  color: $orange-color;
+}
+
+.green {
+  color: $green-color;
+}
+
+.white {
+  color: $white-color;
+}
+
+.black {
+  color: $black-color;
+}
+
+.primary {
+  color: $primary-color;
+}
+
+.error {
+  color: $error-color;
+}
+
+.success {
+  color: $success-color;
+}
+
+.bg-color {
+  background: $bg-color;
+}
+
+.bg-none {
+  background: none !important;
+}
+
+.bg-none * {
+  background: none !important;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.link {
+  color: $primary-color;
+  cursor: pointer;
+}
+
+/* 布局相关 */
+
+.none {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.paddingL0 {
+  padding-left: 0;
+}
+
+.paddingR0 {
+  padding-right: 0;
+}
+
+.paddingB0 {
+  padding-bottom: 0;
+}
+
+.marginT0 {
+  margin-top: 0;
+}
+
+.marginL0 {
+  margin-left: 0;
+}
+
+.marginR0 {
+  margin-right: 0;
+}
+
+.marginB0 {
+  margin-bottom: 0;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+.paddingT5 {
+  padding-top: 5px;
+}
+
+.paddingL5 {
+  padding-left: 5px;
+}
+
+.paddingR5 {
+  padding-right: 5px;
+}
+
+.paddingB5 {
+  padding-bottom: 5px;
+}
+
+.marginT5 {
+  margin-top: 5px;
+}
+
+.marginL5 {
+  margin-left: 5px;
+}
+
+.marginR5 {
+  margin-right: 5px;
+}
+
+.marginB5 {
+  margin-bottom: 5px;
+}
+
+.padding5 {
+  padding: 5px;
+}
+
+.margin5 {
+  margin: 5px;
+}
+
+.paddingT10 {
+  padding-top: 10px;
+}
+
+.paddingL10 {
+  padding-left: 10px;
+}
+
+.paddingR10 {
+  padding-right: 10px;
+}
+
+.paddingB10 {
+  padding-bottom: 10px;
+}
+
+.marginT10 {
+  margin-top: 10px;
+}
+
+.marginL10 {
+  margin-left: 10px;
+}
+
+.marginR10 {
+  margin-right: 10px;
+}
+
+.marginB10 {
+  margin-bottom: 10px;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+.paddingT15 {
+  padding-top: 15px;
+}
+
+.paddingL15 {
+  padding-left: 15px;
+}
+
+.paddingR15 {
+  padding-right: 15px;
+}
+
+.paddingB15 {
+  padding-bottom: 15px;
+}
+
+.marginT15 {
+  margin-top: 15px;
+}
+
+.marginL15 {
+  margin-left: 15px;
+}
+
+.marginR15 {
+  margin-right: 15px;
+}
+
+.marginB15 {
+  margin-bottom: 15px;
+}
+
+.padding15 {
+  padding: 15px;
+}
+
+.margin15 {
+  margin: 15px;
+}
+
+.paddingT20 {
+  padding-top: 20px;
+}
+
+.paddingL20 {
+  padding-left: 20px;
+}
+
+.paddingR20 {
+  padding-right: 20px;
+}
+
+.paddingB20 {
+  padding-bottom: 20px;
+}
+
+.paddingT30 {
+  padding-top: 30px;
+}
+
+.paddingL30 {
+  padding-left: 30px;
+}
+
+.paddingR30 {
+  padding-right: 30px;
+}
+
+.paddingB30 {
+  padding-bottom: 30px;
+}
+
+.marginT30 {
+  margin-top: 30px;
+}
+
+.marginL30 {
+  margin-left: 30px;
+}
+
+.marginR30 {
+  margin-right: 30px;
+}
+
+.marginB30 {
+  margin-bottom: 30px;
+}
+
+.marginT20 {
+  margin-top: 20px;
+}
+
+.marginL20 {
+  margin-left: 20px;
+}
+
+.marginR20 {
+  margin-right: 20px;
+}
+
+.marginB20 {
+  margin-bottom: 20px;
+}
+
+.padding20 {
+  padding: 20px;
+}
+
+.margin20 {
+  margin: 20px;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-20 {
+  z-index: 20;
+}
+
+.z-index-30 {
+  z-index: 30;
+}
+
+.z-index-40 {
+  z-index: 40;
+}
+
+.z-index-50 {
+  z-index: 50;
+}
+
+.z-index-60 {
+  z-index: 60;
+}
+
+.z-index-70 {
+  z-index: 70;
+}
+
+.z-index-80 {
+  z-index: 80;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+/* 边框 */
+.border-T {
+  border-top: 1px solid $border-color-base;
+}
+
+.border-B {
+  border-bottom: 1px solid $border-color-base;
+}
+
+.border-L {
+  border-left: 1px solid $border-color-base;
+}
+
+.border-R {
+  border-right: 1px solid $border-color-base;
+}
+
+.border-dashed-T {
+  border-top: 1px dashed $border-color-base;
+}
+
+.border-dashed-B {
+  border-bottom: 1px dashed $border-color-base;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.border-radius-4 {
+  border-radius: 4px;
+}
+
+.border-round {
+  border: 1px solid $border-color-base;
+}
+
+//鼠标样式
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+/* 主页面 */
+.page-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-wrap {
+  background-color: $bg-color;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: $content-padding;
+  padding-top: calc(#{$top-menu-height} + #{$content-padding});
+  overflow: auto;
+}
+
+.main-view {
+  background-color: $bg-color;
+  min-width: 1000px;
+}
+
+.detail-wrap {
+  background-color: $bg-color;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.detail-view {
+  background-color: $white-color;
+  min-width: 800px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+// 圆角card
+.content-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: $white-color;
+  border-radius: $content-border-radius;
+}
+
+.content-padding {
+  padding: $content-padding;
+}
+
+// 必填，星号
+.qj-required {
+  &::before {
+    content: '*';
+    color: var(--el-color-danger);
+    margin-right: 4px;
+  }
+}
+
+.ellipsis-1 {
+  @include text-overflow();
+}
+
+.ellipsis-2 {
+  @include text-overflow(2);
+}
+
+.ellipsis-3 {
+  @include text-overflow(3);
+}
+
+/* 修改滚动条样式 */
+.common-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+// .common-scrollbar::-webkit-scrollbar-track{
+//   background: rgb(239, 239, 239);
+//   border-radius:2px;
+// }
+.common-scrollbar::-webkit-scrollbar-thumb {
+  background: #d4d5dc;
+  border-radius: 5px;
+}
+// .common-scrollbar::-webkit-scrollbar-thumb:hover{
+//   background: #333;
+// }
+// .common-scrollbar::-webkit-scrollbar-corner{
+//   background: #179a16;
+// }
+
+.i-icon {
+  font-size: 32px;
+  color: $primary-color;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.oneline-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.flexlay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.zindex1000 {
+  z-index: 1000 !important;
+}
+
+// 去掉el-tabs下的长实线
+.el-tabs__nav-wrap::after {
+  display: none;
+}
+
+/************* 数字字体 **************/
+.num-font {
+  font-family: din-medium, sans-serif;
+}
+
+/************** 全局 dot **************/
+.dot-warning {
+  display: inline-flex;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  background: $warning-color;
+}
+
+// 路演角标
+.roadshow-tag {
+  width: 80px;
+  height: 20px;
+  top: 10px;
+  right: -20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  transform: rotate(45deg);
+  font-weight: 600;
+  position: absolute;
+  color: $white-color;
+  background: $primary-color;
+  letter-spacing: 2px;
+}
